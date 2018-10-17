@@ -1,5 +1,7 @@
 package com.antoine.ASCIIart.manager;
 
+import java.util.Scanner;
+
 import com.antoine.ASCIIart.alphabets.DefaultAlphabet;
 
 public class AsciiManager {
@@ -36,7 +38,10 @@ public class AsciiManager {
 	     return builder.toString();
 
 	     }
+
+
 	}
+	
 
 
 

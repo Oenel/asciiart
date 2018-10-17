@@ -3,7 +3,10 @@
  */
 package com.antoine.ASCIIart;
 
+import com.antoine.ASCIIart.alphabets.BasicAlphabet;
+import com.antoine.ASCIIart.alphabets.DefaultAlphabet;
 import com.antoine.ASCIIart.alphabets.MonAlphabet;
+import com.antoine.ASCIIart.alphabets.datas.AlphabetDatas;
 import com.antoine.ASCIIart.manager.AsciiManager;
 import com.antoine.ASCIIart.utiles.ScannerProviden;
 
@@ -18,10 +21,12 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		AsciiManager ascii = new AsciiManager (new MonAlphabet());
-		System.out.println(ascii.getAsciiTransformation("BOBO BIG TOTOT"));
-		//ascii.getAsciiTransformation(ScannerProviden.getInstance().getScanner());
-		//ScannerProviden.getInstance().getScanner();
+		AsciiManager ascii = new AsciiManager (new BasicAlphabet());
+		
+		//System.out.println(ascii.getAsciiTransformation("BOBO"));
+		
+
+		System.out.println(ascii.getAsciiTransformation(ScannerProviden.getInstance().getScanner().nextLine()));
 	}
 
 	
